@@ -25,10 +25,10 @@ void merge(std::vector<int> &v, int left, int mid, int right) {
         v[k] = v[k - 1];
         k--;
       }
-      v[k] = tmp;
-      mid++;
+      v[i] = tmp;
       i++;
       j++;
+      mid++;
     }
   }
 }

@@ -9,3 +9,10 @@ void mergeSort(std::vector<int> &, int, int);
 void merge(std::vector<int> &, int, int, int);
 
 void quickSort(std::vector<int> &, int, int);
+
+void selectionSort(std::vector<int> &);
+int _findMinIdxInVector(std::vector<int> &, int = 0);
+
+void insertionSort(std::vector<int> &);
+
+void bubbleSort(std::vector<int> &);
