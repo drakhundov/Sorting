@@ -1,5 +1,19 @@
 #include "sorting.h"
 
+/*
+ ! Divide and Conqier Algorithm.
+ * Time Complexity: O(nlogn)
+ * Space Complexity: O(logn)
+ ! Adaptive: No
+ ! Stable: Yes
+ * Applications:
+ *   Stability requirement.
+ *   Large datasets (O(nlogn) is guaranteed).
+ ! Worse that Quick Sort in practice.
+ ! Avoid for in-place sorting (Quick Sort or Heap Sort are better).
+ ! Avoid using on small arrays.
+ */
+
 void mergeSort(std::vector<int> &v, int left, int right) {
   if (left < right) {
     int mid = (left + right) / 2;

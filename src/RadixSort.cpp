@@ -2,6 +2,22 @@
 
 #define digit(val, exp) ((val / exp) % 10)
 
+/*
+ ! Non-comparative sorting algorithm
+ * Time Complexity: O(d*(n+k))
+ * n - size of the dataset
+ * d - maximum number of digits
+ * k - range of the digits (10 for decimal)
+ * Space Complexity:
+ *   Best Case:
+ *   Worst Case:
+ ! Adaptive: No
+ ! Stable: Yes
+ * Applications:
+ *   Large datasets.
+ *   Stability requirement.
+ */
+
 void radixSort(std::vector<int> &v, int ndigits) {
   if (ndigits == -1) {
     int arrMax = *std::max_element(v.begin(), v.end());

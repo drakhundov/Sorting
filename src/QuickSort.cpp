@@ -1,5 +1,20 @@
 #include "sorting.h"
 
+/*
+ ! Divide and Conqier Algorithm.
+ * Time Complexity:
+ *   Best Case: O(nlogn)
+ *   Worst Cast O(n^2) [unbalanced partitions due to the pivot]
+ * Space Complexity:
+ *   Best Case: O(logn) [if the partitions divide the array perfectly]
+ *   Worst Case: O(n)
+ ! Adaptive: No
+ ! Stable: No
+ * Applications:
+ *   General-purpose sorting.
+ *   Large datasets.
+ */
+
 void quickSort(std::vector<int> &v, int left, int right) {
   if (left >= right) {
     return;
